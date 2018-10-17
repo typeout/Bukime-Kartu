@@ -1,0 +1,118 @@
+body {
+	margin: auto;
+	background: url(images/swirl.png);
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.main {
+	width: 100%;
+	max-width: 1140px;
+	margin: auto;
+}
+
+#backimg {
+	position: absolute;
+	z-index: -1;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr 1fr;
+	grid-template-rows: 75px auto auto auto 100px;
+	grid-template-areas: 
+		"menu menu menu social"
+		"header header header ."
+		"banner banner banner banner"
+		"grid1 grid2 grid3 grid3"
+		"footer footer footer footer";
+}
+
+#menu {
+	grid-area: menu;
+	padding-left: 2em;
+	align-self: center;
+}
+
+footer {
+	grid-area: footer;
+}
+
+#social {
+	grid-area: social;
+	align-self: center;
+	justify-self: center;
+}
+
+.icon {
+	width: 3em;
+	height: 3em;
+
+}
+
+.mainmenu {
+	font-size: 1.25em;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #65743a;
+	padding: 10px;
+	background: #daff94;
+	border-radius: 10px 10px 0 0 ;
+	margin-right: 3px;
+}
+
+.header {
+	grid-area: header;
+	justify-self: center;
+	height: auto;
+}
+
+.header h1 {
+	color: #394f49;
+	font-size: 3em;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.header h4 {
+	text-align: center;
+	margin-top: -30px;
+	font-style: italic;
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	color: #65743a;
+}
+
+.header p {
+	padding-left: 85px;
+	font-size: 1.25em;
+	color: black;
+	padding-bottom: 18px;
+	letter-spacing: 1px;
+}
+
+.banner {
+	grid-area: banner;
+	justify-self: center;
+}
+
+.banner img {
+	border: 2px solid #a2ff6a;
+	border-radius: 10px 10px 0 0;
+
+}
